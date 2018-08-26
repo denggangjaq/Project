@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>旋转</title>
+    <style media="screen">
+      .picture{margin: 100px 0 0 100px;position:
+      }
+      .picture img{float: left;display: block;position: absolute;}
+      .picture .p1 img{z-index: 500}
+      .picture .p2 img{z-index: 400}
+      .p3 img{z-index: 300}
+      .p4 img{z-index: 200}
+      .p5 img{z-index: 1}
+      .picture:hover .p1 img{
+        display: block;
+        transform:rotate(90deg);
+        transform-origin: 100% 100%;
+        transition-duration:3s;
+      }
+      .picture:hover .p2 img{
+        display: block;
+        transform:rotate(70deg);
+        transform-origin: 100% 100%;
+        transition-duration:2.5s;
+      }
+      .picture:hover .p3 img{
+        display: block;
+        transform:rotate(50deg);
+        transform-origin: 100% 100%;
+        transition-duration:2s;
+      }
+      .picture:hover .p4 img{
+        display: block;
+        transform:rotate(30deg);
+        transform-origin: 100% 100%;
+        transition-duration:1.5s;
+      }
+      .picture:hover .p5 img{
+        display: block;
+        transform:rotate(10deg);
+        transform-origin: 100% 100%;
+        transition-duration:1s;
+      }
+    </style>
+  </head>
+  <body>
+      <div class="picture">
+        <div class="p1"><img src="images/x1.png" alt="" ></div>
+        <div class="p2"><img src="images/x2.png" alt="" ></div>
+        <div class="p3"><img src="images/x3.png" alt="" ></div>
+        <div class="p4"><img src="images/x4.png" alt="" ></div>
+        <div class="p5"><img src="images/x5.png" alt="" ></div>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>json</title>
+    <script type="text/javascript" src="js/json.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+  </head>
+  <body>
+
+<div id="J_main">
+  <ul></ul>
+  <div class="banner"></div>
+</div>
+
+  </body>
+</html>
+<script>
+  var datas = url.data;
+    //console.log(datas);
+    var dataname = new Array();
+    var dataname1 = new Array();
+    for (var ii = 0; ii < datas.length; ii++) {
+      //  console.log(datas[ii]['i']);
+          dataname = datas[ii]['i'];
+        for (var j = 0; j < dataname.length; j++) {
+          //console.log(dataname[j]['i']);
+            dataname1 = dataname[j]['i'];
+          for (var ji = 0; ji < dataname1.length; ji++) {
+              console.log(dataname1[ji]);
+          }
+        }
+    }
+
+</script>
